@@ -4,9 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <Fr
+        <TextView
+            android:text="고객정보 입력"
+            android:textSize="50dp"
+            >
 
+        </TextView>
+
+        <fragment
+            android:name="com.example.homeworkapp1.FragmentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frg_name"
+            tools:layout="@layout/activity_main" >
+
+         </fragment>
+
+         <fragment
+             android:name="com.example.homeworkapp1.FragmentOld"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/frg_old"
+             tools:layout="@layout/activity_main" >
+
+         </fragment>
+        <fragment
+            android:name="com.example.homeworkapp1.FragmentBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frg_bth"
+            tools:layout="@layout/activity_main" >
+
+        </fragment>
+
+        <Button
+            android:id="@+id/btn"
+            android:text="저장"
+            android:textSize="50dp"
+            >
+
+        </Button>
 
 </LineartLayout>
